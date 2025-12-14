@@ -40,7 +40,7 @@
             overflow-x: hidden;
             line-height: 1.6;
             /* FIX 4: Add global smooth scroll behavior for general navigation */
-            scroll-behavior: smooth; 
+            scroll-behavior: smooth;
         }
 
         /* Matrix Background Effect */
@@ -728,89 +728,90 @@
             background: linear-gradient(45deg, #405DE6, #833AB4, #C13584, #E1306C);
         }
 
-       /* =========================
+        /* =========================
    CONTACT FORM BASE
 ========================= */
-.contact-form input,
-.contact-form textarea,
-.contact-form select {
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 20px;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(0, 255, 157, 0.3);
-    color: var(--text-light);
-    font-size: 1rem;
-    font-family: 'JetBrains Mono', monospace;
-    transition: all 0.3s ease;
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form select {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(0, 255, 157, 0.3);
+            color: var(--text-light);
+            font-size: 1rem;
+            font-family: 'JetBrains Mono', monospace;
+            transition: all 0.3s ease;
 
-    /* Prevent fixed header overlap */
-    scroll-margin-top: 100px;
+            /* Prevent fixed header overlap */
+            scroll-margin-top: 100px;
 
-    /* Autofill fix */
-    -webkit-box-shadow: 0 0 0 1000px var(--dark-bg) inset !important;
-    box-shadow: 0 0 0 1000px var(--dark-bg) inset !important;
-    -webkit-text-fill-color: var(--text-light) !important;
-}
+            /* Autofill fix */
+            -webkit-box-shadow: 0 0 0 1000px var(--dark-bg) inset !important;
+            box-shadow: 0 0 0 1000px var(--dark-bg) inset !important;
+            -webkit-text-fill-color: var(--text-light) !important;
+        }
 
-/* =========================
+        /* =========================
    SELECT WITH ANIMATED ARROW
 ========================= */
-.contact-form select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+        .contact-form select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
 
-    /* SVG arrow */
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2300ff9d'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 15px center;
-    background-size: 18px;
+            /* SVG arrow */
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2300ff9d'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 15px center;
+            background-size: 18px;
 
-    padding-right: 45px;
-    cursor: pointer;
-}
+            padding-right: 45px;
+            cursor: pointer;
+        }
 
-/* Arrow rotation on open */
-.contact-form select:focus {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2300ff9d' style='transform:rotate(180deg)'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
-}
+        /* Arrow rotation on open */
+        .contact-form select:focus {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2300ff9d' style='transform:rotate(180deg)'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+        }
 
-/* Dropdown options */
-.contact-form select option {
-    background-color: var(--dark-bg);
-    color: var(--text-light);
-}
+        /* Dropdown options */
+        .contact-form select option {
+            background-color: var(--dark-bg);
+            color: var(--text-light);
+        }
 
-/* =========================
+        /* =========================
    FOCUS EFFECTS
 ========================= */
-.contact-form input:focus,
-.contact-form textarea:focus,
-.contact-form select:focus {
-    outline: none;
-    border-color: var(--terminal-green);
-    box-shadow: 0 0 10px rgba(0, 255, 157, 0.3);
-}
+        .contact-form input:focus,
+        .contact-form textarea:focus,
+        .contact-form select:focus {
+            outline: none;
+            border-color: var(--terminal-green);
+            box-shadow: 0 0 10px rgba(0, 255, 157, 0.3);
+        }
 
-/* =========================
+        /* =========================
    PLACEHOLDERS
 ========================= */
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-    color: var(--text-dim);
-}
+        .contact-form input::placeholder,
+        .contact-form textarea::placeholder {
+            color: var(--text-dim);
+        }
 
-/* =========================
+        /* =========================
    MOBILE SUPPORT
 ========================= */
-@media (max-width: 768px) {
-    .contact-form input,
-    .contact-form textarea,
-    .contact-form select {
-        font-size: 0.95rem;
-    }
-}
+        @media (max-width: 768px) {
+
+            .contact-form input,
+            .contact-form textarea,
+            .contact-form select {
+                font-size: 0.95rem;
+            }
+        }
 
         .form-notice {
             background: rgba(0, 255, 157, 0.1);
@@ -830,6 +831,7 @@
                 opacity: 0;
                 transform: translate(-50%, -50%) scale(0.8);
             }
+
             to {
                 opacity: 1;
                 transform: translate(-50%, -50%) scale(1);
@@ -841,6 +843,7 @@
                 opacity: 1;
                 transform: translate(-50%, -50%) scale(1);
             }
+
             to {
                 opacity: 0;
                 transform: translate(-50%, -50%) scale(0.8);
@@ -865,7 +868,7 @@
             max-width: 400px;
             text-align: center;
             padding: 30px;
-            
+
             /* Apply positioning for animation */
             position: absolute;
             top: 50%;
@@ -873,7 +876,7 @@
             transform: translate(-50%, -50%);
             animation: popup-open 0.3s ease-out forwards;
         }
-        
+
         /* FIX 3: Closing animation class */
         #responseModal.modal-closing .modal-content {
             animation: popup-close 0.3s ease-in forwards;
@@ -890,14 +893,16 @@
             background: rgba(0, 255, 157, 0.2);
             color: var(--terminal-green);
             border: 1px solid var(--terminal-green);
-            box-shadow: 0 0 15px rgba(0, 255, 157, 0.5); /* Added glow for prominence */
+            box-shadow: 0 0 15px rgba(0, 255, 157, 0.5);
+            /* Added glow for prominence */
         }
 
         .response-error {
             background: rgba(255, 0, 0, 0.2);
             color: #ff0000;
             border: 1px solid #ff0000;
-            box-shadow: 0 0 15px rgba(255, 0, 0, 0.5); /* Added glow for prominence */
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+            /* Added glow for prominence */
         }
 
 
@@ -965,7 +970,8 @@
             color: var(--terminal-green);
             font-size: 1.5rem;
             cursor: pointer;
-            z-index: 2001; /* Ensure close button is clickable */
+            z-index: 2001;
+            /* Ensure close button is clickable */
         }
 
         .modal-preview {
@@ -1352,7 +1358,8 @@
                         <a href="https://wa.me/9047854498" class="social-icon whatsapp" target="_blank">
                             <i class="fab fa-whatsapp"></i>
                         </a>
-                        <a href="https://www.instagram.com/ard_infotech?igsh=MWFoamp5NmNyd29uNw==" class="social-icon instagram" target="_blank">
+                        <a href="https://www.instagram.com/ard_infotech?igsh=MWFoamp5NmNyd29uNw=="
+                            class="social-icon instagram" target="_blank">
                             <i class="fab fa-instagram"></i>
                         </a>
                     </div>
@@ -1363,17 +1370,17 @@
                         > Fill out this form to get a free quote. We'll respond within 24 hours.
                     </div>
                     <form id="custom-contact-form">
-                        <input type="text" name="entry.221716052" placeholder="Your Full Name" required>
-                        <input type="email" name="entry.343717427" placeholder="Your Email Address" required>
-                        <input type="tel" name="entry.1947802971" placeholder="Your Phone Number" required>
-                        <select name="entry.1331634432" required>
+                        <input type="text" name="entry.1584381643" placeholder="Your Full Name" required>
+                        <input type="email" name="entry.1809553368" placeholder="Your Email Address" required>
+                        <input type="tel" name="entry.713149354" placeholder="Your Phone Number" required>
+                        <select name="entry.43118598" required>
                             <option value="">Select Service</option>
                             <option value="Small Business Website">Small Business Website</option>
                             <option value="Portfolio Website">Portfolio Website</option>
                             <option value="Resume Website">Resume Website</option>
                             <option value="Other">Other</option>
                         </select>
-                        <textarea name="entry.938791328" rows="5" placeholder="Tell us about your project..."
+                        <textarea name="entry.2033362559" rows="5" placeholder="Tell us about your project..."
                             required></textarea>
                         <button type="submit" class="cta-button" style="width: 100%;">
                             <i class="fas fa-paper-plane"></i> Send Message
@@ -1421,19 +1428,20 @@
         <div class="modal-content">
             <button class="close-modal response-close-btn">&times;</button>
             <div id="responseMessageBox" class="response-message-box">
-                </div>
+            </div>
         </div>
     </div>
 
 
     <iframe name="hidden-iframe" id="hidden-iframe" style="display:none;"></iframe>
-    <form id="hidden-google-form" action="https://docs.google.com/forms/d/e/1FAIpQLSfwApptN4xW0WkIErULGD8qvWtubpqE49Xzw0iJc_hU_yxecA/formResponse"
+    <form id="hidden-google-form"
+        action="https://docs.google.com/forms/d/e/1FAIpQLScRs1zco-fTYl79rihLUuPloHIkx0ltlj_YZCNhfkQ7Ayxxew/formResponse"
         method="POST" target="hidden-iframe">
-        <input type="text" name="entry.221716052" id="hidden-name">
-        <input type="email" name="entry.343717427" id="hidden-email">
-        <input type="text" name="entry.1947802971" id="hidden-phone">
-        <input type="text" name="entry.1331634432" id="hidden-service">
-        <textarea name="entry.938791328" id="hidden-message"></textarea>
+        <input type="text" name="entry.1584381643" id="hidden-name">
+        <input type="email" name="entry.1809553368" id="hidden-email">
+        <input type="text" name="entry.713149354" id="hidden-phone">
+        <input type="text" name="entry.43118598" id="hidden-service">
+        <textarea name="entry.2033362559" id="hidden-message"></textarea>
     </form>
 
     <script>
@@ -1635,7 +1643,7 @@
                 if (target) {
                     // Smooth scroll, respecting the fixed header (80px + margin)
                     window.scrollTo({
-                        top: target.offsetTop - 100, 
+                        top: target.offsetTop - 100,
                         behavior: 'smooth'
                     });
                 }
@@ -1657,7 +1665,7 @@
         ================================ */
         const customForm = document.getElementById('custom-contact-form');
         const hiddenForm = document.getElementById('hidden-google-form');
-        
+
         // Response Modal Elements
         const responseModal = document.getElementById('responseModal');
         const responseMessageBox = document.getElementById('responseMessageBox');
@@ -1684,13 +1692,13 @@
         function setResponseMessage(message, isSuccess) {
             responseMessageBox.textContent = message;
             responseMessageBox.className = 'response-message-box ' + (isSuccess ? 'response-success' : 'response-error');
-            
+
             // Show the modal in the center of the screen
             responseModal.style.display = 'flex';
-            document.body.classList.add('modal-open'); 
-            
+            document.body.classList.add('modal-open');
+
             // Auto-hide the modal after 3 seconds
-            setTimeout(closeResponseModal, 3000); 
+            setTimeout(closeResponseModal, 3000);
         }
 
         customForm.addEventListener('submit', function (e) {
@@ -1706,7 +1714,7 @@
                     // Manually scroll smoothly to the invalid element. 
                     invalidElement.scrollIntoView({
                         behavior: 'smooth',
-                        block: 'start' 
+                        block: 'start'
                     });
                 }
                 return; // Stop the function if form is invalid
@@ -1720,13 +1728,13 @@
             // 1. Disable button and show loading state
             formButton.disabled = true;
             formButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-            
+
             // Ensure any previous response modal is closed before sending
             closeResponseModal();
 
             // 2. Map data from custom form to hidden Google Form
             const customInputs = customForm.querySelectorAll('input, textarea, select');
-            
+
             // Clear hidden form before mapping
             hiddenForm.reset();
 
@@ -1744,7 +1752,7 @@
                 // We assume success after a delay since cross-origin content cannot be read.
                 iframe.onload = function () {
                     // Wait a short period to allow the request to process
-                    setTimeout(() => resolve(true), 1500); 
+                    setTimeout(() => resolve(true), 1500);
                 };
 
                 // Submit the form
@@ -1756,21 +1764,19 @@
                 customForm.reset();
                 setResponseMessage('Message Sent Successfully! We will contact you soon.', true);
             }).catch(error => {
-                 setResponseMessage('Sorry! Could not send message. Please try WhatsApp.', false);
+                setResponseMessage('Sorry! Could not send message. Please try WhatsApp.', false);
             }).finally(() => {
                 // 5. Restore button state
                 formButton.disabled = false;
                 formButton.innerHTML = originalButtonText;
 
                 // Clear the hidden form after successful transfer/submission
-                hiddenForm.reset(); 
+                hiddenForm.reset();
             });
         });
 
-        
     </script>
 
 </body>
-
 
 </html>
