@@ -406,10 +406,6 @@
             left: -2px;
             right: -2px;
             bottom: -2px;
-            background: linear-gradient(45deg,
-                    var(--terminal-green),
-                    var(--code-blue),
-                    var(--hacker-purple));
             z-index: -1;
             opacity: 0;
             transition: opacity 0.3s;
@@ -421,7 +417,6 @@
 
         .service-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 10px 30px rgba(0, 255, 157, 0.2);
         }
 
         .service-icon {
@@ -961,17 +956,38 @@
             padding: 40px;
         }
 
+        /* FIXED: Close Modal Button stays in place while scrolling */
         .close-modal {
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            background: transparent;
-            border: none;
+            position: fixed;
+            /* Changed from absolute to fixed */
+            top: 25px;
+            /* Adjusted slightly for fixed positioning */
+            right: 25px;
+            /* Adjusted slightly for fixed positioning */
+            background: var(--terminal-bg);
+            /* Added background to stay visible over text */
+            border: 2px solid var(--terminal-green);
+            /* Added border for extra visibility */
             color: var(--terminal-green);
-            font-size: 1.5rem;
+            font-size: 2.5rem;
+            width: 55px;
+            height: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             cursor: pointer;
-            z-index: 2001;
-            /* Ensure close button is clickable */
+            z-index: 2100;
+            /* Ensure it stays above everything */
+            transition: all 0.3s ease;
+            line-height: 1;
+            border-radius: 4px;
+            /* Matches your logo style */
+        }
+
+        .close-modal:hover {
+            background: var(--terminal-green);
+            color: var(--dark-bg);
+            transform: scale(1.1);
         }
 
         .modal-preview {
@@ -1160,7 +1176,7 @@
 
     <section class="hero" id="home">
         <div class="container">
-            <h1 class="glitch-text" data-text="FRONTEND DEV FOR SMALL BUSINESS">FRONTEND DEV FOR SMALL BUSINESS</h1>
+            <h1 class="glitch-text" data-text="FRONTEND DEV FOR YOUR BUSINESS">FRONTEND DEV FOR YOUR BUSINESS</h1>
             <p class="terminal-text">We code clean, responsive websites that help your business stand out online.</p>
             <a href="#projects" class="cta-button">View Our Work</a>
         </div>
@@ -1375,7 +1391,7 @@
                         <input type="tel" name="entry.713149354" placeholder="Your Phone Number" required>
                         <select name="entry.43118598" required>
                             <option value="">Select Service</option>
-                            <option value="Small Business Website">Small Business Website</option>
+                            <option value="Small Business Website"> Business Website</option>
                             <option value="Portfolio Website">Portfolio Website</option>
                             <option value="Resume Website">Resume Website</option>
                             <option value="Other">Other</option>
@@ -1401,7 +1417,7 @@
                 <a href="#contact">Contact</a>
             </div>
             <div class="copyright">
-                <p>&copy; 2024 ARD_INFO_TECH | Frontend Development for Small Businesses</p>
+                <p>&copy; 2026 ARD_INFO_TECH | Frontend Development for Your Businesses</p>
                 <p style="margin-top: 10px; color: var(--terminal-green);">Crafted with clean code and precision.</p>
             </div>
         </div>
